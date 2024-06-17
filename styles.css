@@ -1,0 +1,88 @@
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background-color: #D8E5FC; /* Default background color */
+    margin: 0;
+    padding: 0; /* Add padding to body to prevent cutting off */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the top of the flex container */
+    min-height: 100vh; /* Ensure at least full viewport height */
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px; /* Add margin top to create space */
+    max-width: 90%; /* Adjust max-width as needed */
+}
+
+header {
+    margin-bottom: 20px;
+}
+
+/* Adjust the size of the star icon */
+.affirmation .star {
+    width: 25px; /* Adjust as needed */
+    height: 25px; /* Adjust as needed */
+    margin-right: 10px;
+}
+
+/* Style for checked affirmations */
+.affirmation.checked {
+    background-color: #FFC0CB; /* Highlight color when checked */
+    color: #555; /* Adjust text color when checked */
+    font-weight: bold; /* Make checked affirmations bold */
+}
+
+.affirmations {
+    text-align: left;
+    padding: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.affirmation {
+    font-size: 18px; /* Adjust as needed */
+    margin-bottom: 15px; /* Adjust margin bottom */
+    position: relative;
+}
+
+#complete-button {
+    background-color: #FFC0CB;
+    color: white;
+    border: none;
+    padding: 12px 24px; /* Adjust padding */
+    font-size: 18px; /* Adjust font size */
+    cursor: pointer;
+    border-radius: 30px;
+    margin-top: 20px;
+}
+
+#complete-button:focus {
+    outline: none;
+}
+
+.confetti {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 9999;
+}
+
+.message-popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    z-index: 10000;
+}
